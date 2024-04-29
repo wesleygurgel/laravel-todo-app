@@ -39,6 +39,7 @@ class TodoController extends Controller
             $todo = new Todo();
             $todo->title = $request->title;
             $todo->description = $request->description;
+            $todo->status = $request->status;
             $todo->save();
 
             $data = array(
